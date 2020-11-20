@@ -1,0 +1,34 @@
+{
+    "optional_input_file_directory": "",
+    "untreated_file_name": "un.gff",
+    "treated_file_name": "treat.gff",
+    "window":"800",
+    "single_peak_window":"800",
+    "p_value_threshhold":"0.0001",
+    "ratio_threshhold": "1",
+    "genome_size":"100000",
+    "coordinate_column": "5",
+    "read_count_column": "6",
+    "optional_strand_column": "",
+    "optional_output_file_directory": "",
+    "optional_out_peak_file_name":"Test_output_peaks.txt",
+    "optional_out_sum-score_file_name": "Test_output_summary.txt",
+
+    "comments":{
+        "optional_": "Parameters can be left blank and will default to current working directory; parameters and paths need to be in double quotation marks",
+        "window":"Number of positions to include upstream and dowstream of each coordinate when adding read coverage",
+        "single_peak_window": "Min distance between regions with significant difference in transcriptional readthrough when calling peaks",
+        "p_value_threshhold": "Max p value from fisher's exact test to use for selecting transcriptional readthrough regions",
+        "ratio_threshhold": "1/(untreated/treated) ratio direction; e.g. ratio > 1 means treated sample has more readthrough",
+        "genome_size": "Required to calculate transcriptional readthrough for each position and select the best peak in the region",
+        "coordinate_column": "Column number in the tab-delimited input file that holds genome coordinate",
+        "read_count_column": "Column number in the tab-delimited input file that holds read count number for a specific coordinate",
+        "optional_strand_column": "Can be blank if read count column has negative values to represent minus strand",
+        "optional_input_file_directory": "Can be left blank if input read count files are in the same directory as the program",
+        "untreated_file_name": "Full file name with extension; must be tab-delimited",
+        "treated_file_name": "Full file name with extension; must be tab-delimited",
+        "optional_output_file_directory": "Can be left blank and will save output files to to current working directory",
+        "optional_out_peak_file_name": "Full file name with extension; if left blank, output files will have an auto-generate a file name with parameters; Reports just selected peaks with associated information",
+        "optional_out_sum-score_file_name": "Summary file; Full file name with extension or if left blank, output files will have an auto-generated file name with parameters; Reports all positions that meet significance/pvalue threshold and were used for peak calling and associated information"
+    }
+}
