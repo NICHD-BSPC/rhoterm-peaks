@@ -1,7 +1,7 @@
 {
     "optional_input_file_directory": "",
-    "untreated_file_name": "un.gff",
-    "treated_file_name": "treat.gff",
+    "untreated_file_name": "test/untreated.gff",
+    "treated_file_name": "test/treated.gff",
     "window":"800",
     "single_peak_window":"800",
     "p_value_threshhold":"0.0001",

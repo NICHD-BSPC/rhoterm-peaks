@@ -1,0 +1,23 @@
+version: 2
+
+jobs:
+  test:
+    docker:
+      - image: continuumio/miniconda3
+
+    steps:
+      - checkout
+
+      - run:
+          name: install requirements
+          command: conda install -y --file requirements.txt --channel conda-forge --channel bioconda
+
+      - run:
+          name: run example data
+          command: python rhoterm_caller.py
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test
