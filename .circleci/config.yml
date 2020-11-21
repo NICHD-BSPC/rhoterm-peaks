@@ -13,8 +13,11 @@ jobs:
           command: conda install -y --file requirements.txt --channel conda-forge --channel bioconda
 
       - run:
-          name: run example data
-          command: python rhoterm_caller.py
+          name: run cli help
+          command: python rhoterm_caller.py -h
+      - run:
+          name: run test data
+          command: (cd test && bash test.sh)
 
 workflows:
   version: 2
