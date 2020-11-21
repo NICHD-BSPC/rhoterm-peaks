@@ -1,6 +1,10 @@
 Rho termination peak-caller
 ===========================
 
+.. image:: https://circleci.com/gh/NICHD-BSPC/rhoterm-peaks.svg?style=svg
+    :target: https://circleci.com/gh/NICHD-BSPC/rhoterm-peaks
+
+
 This tool was designed to call peaks at Rho termination regions.
 The tool identifies genomic regions where read coverage is significantly
 higher in the 'Treated' sample vs 'Untreated'.
